@@ -1,0 +1,133 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 55px;
+  background-color: var(--primary);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-left{
+    max-width: 450px;
+  }
+  &-right{
+    max-width: 450px;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  & a img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  &__logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__logo-title {
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    color: #fff;
+  }
+  &__logo-link {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 188%;
+    color: #fff;
+    &:hover {
+      color: var(--grey);
+    }
+  }
+  &__copyright {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 55px;
+  }
+  &__nav-list {
+    display: flex;
+    gap: 26px;
+  }
+  &__nav-item {
+    position: relative;
+  }
+  &__nav-item:nth-child(1)::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: rgba(230, 230, 230, 0.3);
+    margin-left: 13px;
+    // left: 50%;
+    top: 50%;
+  }
+  &__nav-link {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+    &:hover {
+      color: var(--grey);
+    }
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    &__title {
+      font-family: var(--font3);
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 127%;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    &__social {
+      margin-bottom: 27px;
+      display: flex;
+      gap: 12px;
+    }
+    &__desc {
+      font-family: var(--third-family);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 188%;
+      color: #fff;
+    }
+  }
+}
+.youtube {
+  width: 26px;
+  height: 26px;
+  fill:#fff;
+  transition: fill .3s ease-in-out;
+  &:hover{
+    fill:var(--grey);
+  }
+}
+.github {
+    width: 25px;
+    height: 25px;
+    fill:#fff;
+    &:hover{
+      fill:var(--grey);
+    }
+}
+.pinterest {
+    width: 26px;
+    height: 26px;
+    fill:#fff;
+    &:hover{
+      fill:var(--grey);
+    }
+}
